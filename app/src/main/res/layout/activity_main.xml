@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    tools:context="com.example.cathleen.test3.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="这里将显示信息"
+        android:id="@+id/showButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/editTextButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="这里将显示checkBox的情况"
+        android:id="@+id/showCheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/C"
+        android:onClick="onCheckBoxClicked"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++"
+        android:id="@+id/Cpp"
+        android:onClick="onCheckBoxClicked"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:id="@+id/java"
+        android:onClick="onCheckBoxClicked"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="这将显示RadioButton的信息"
+            android:id="@+id/showRadioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男人"
+            android:id="@+id/men"
+            android:onClick="onCheckRadioClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女人"
+            android:id="@+id/women"
+            android:onClick="onCheckRadioClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女博士"
+            android:id="@+id/DCwomen"
+            android:onClick="onCheckRadioClicked"/>
+
+    </RadioGroup>
+
+</LinearLayout>
